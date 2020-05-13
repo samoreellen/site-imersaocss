@@ -1,3 +1,9 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   background:lightseagreen;
@@ -5,11 +11,36 @@ body {
   height: 100vh;
   margin: 0;
   display: grid;
-  place-items: center;
 }
 
+
+@media (min-width:  400px) {
+  body{
+    font-size:14px;
+  }
+}
+@media (min-width:  600px) {
+  body{
+    font-size:18px;
+  }
+}
+@media (min-width:  1200px) {
+  body{
+    font-size:22px;
+  }
+}
+
+header{
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .menu{
     background-color: white;
+    position: fixed;
+    width: 100vw;
+    top:0;
 }
 
 .menu li{
@@ -19,6 +50,11 @@ body {
 .menu ul{
   display: flex;
   justify-content: space-around;
+}
+
+.menu a{
+  display: block;
+  padding: 10px 20px;
 }
 
 a{
@@ -36,6 +72,14 @@ a:hover{
   text-align: center;
   
 }
+.site-title{
+  font-size: 3em;;
+}
 .site-subtitle{
   font-style: italic;
 }
+.img-portfolio{
+  width: 180px;
+  height: 180px;
+}
+
