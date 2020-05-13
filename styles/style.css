@@ -5,12 +5,13 @@
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background:lightseagreen;
   color: white;
   height: 100vh;
   margin: 0;
   display: grid;
+  font-size: 12px;
 }
 
 
@@ -73,7 +74,8 @@ a:hover{
   
 }
 .site-title{
-  font-size: 3em;;
+  font-size: 3em;
+  font-family: 'Poiret One', cursive;
 }
 .site-subtitle{
   font-style: italic;
