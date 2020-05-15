@@ -26,62 +26,86 @@ body {
   }
 }
 @media (min-width:  1200px) {
-  body{
+  body {
     font-size:22px;
   }
 }
 
-header{
+header {
   height: 30vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.menu{
+.menu {
     background-color: white;
     position: fixed;
     width: 100vw;
     top:0;
 }
 
-.menu li{
+.menu li {
   list-style:none;
 }
 
-.menu ul{
+.menu ul {
   display: flex;
   justify-content: space-around;
 }
 
-.menu a{
+.menu a {
   display: block;
   padding: 10px 20px;
 }
 
-a{
+a {
     text-decoration: none;
     color: teal;
 }
 
-a:hover{
+a:hover {
     color: turquoise;
 }
 
 .site-subtitle,
-.site-title{
+.site-title {
   color: whitesmoke;
   text-align: center;
   
 }
-.site-title{
+.site-title {
   font-size: 3em;
   font-family: 'Poiret One', cursive;
 }
-.site-subtitle{
+.site-subtitle {
   font-style: italic;
 }
-.img-portfolio{
-  width: 180px;
+.img-portfolio {
+  width: 400px;
   height: 180px;
 }
 
+.portfolio {
+  padding: 2em;
+}
+
+.portfolio h2 {
+  margin-bottom: 1.5em;
+  font-size:1.7em;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 1em;
+}
+
+@media(min-width: 560px) {
+  .portfolio .grid {
+
+    grid-template-columns: 400px 400px;
+  }
+}
+
+.portfolio figure {
+  text-align: center;
+}
